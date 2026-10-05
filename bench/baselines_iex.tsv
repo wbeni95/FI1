@@ -1,0 +1,5 @@
+deep_300m.pcap	gzip -9	69944041	4.289	31.6	0.6
+deep_300m.pcap	zstd -3	61457528	4.881	0.7	0.2
+deep_300m.pcap	zstd -19 --long	50981837	5.884	171.7	0.3
+deep_300m.pcap	zstd -22 --ultra --long	50796110	5.906	330.4	0.2
+deep_300m.pcap	xz -9e	40983876	7.320	264.7	1.2

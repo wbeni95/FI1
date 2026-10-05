@@ -1,0 +1,9 @@
+# Never commit data, compressed files or binaries (binaries go to Releases)
+*.fi
+*.itch
+*.gz
+*.exe
+*.zip
+*_ITCH_50
+*.baseline
+dist/

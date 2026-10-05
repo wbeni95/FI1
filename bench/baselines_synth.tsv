@@ -1,0 +1,4 @@
+bx_ab.pcap	zstd -19 --long -T16	134399617	6.577	80.0	1.4
+bx_ab.pcap	xz -9 -T16	113369420	7.797	105.3	0.9
+itto_ab.pcapng	zstd -19 --long -T16	101192538	6.880	50.6	0.4
+itto_ab.pcapng	xz -9 -T16	82800240	8.408	75.0	0.9

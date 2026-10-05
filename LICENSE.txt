@@ -1,0 +1,124 @@
+FreeIdea license (evaluation build)
+
+Copyright (c) 2026 Benjamin Weisz. All rights reserved.
+
+These terms govern the FreeIdea evaluation build: the program, its documentation and the
+FreeIdea file format (together "the Software"). The licensor is Benjamin Weisz ("the
+Licensor"). By downloading or running the Software you accept these terms; if you do so for
+an organisation, you accept them on its behalf.
+
+1. Free use.
+   a. Evaluation. Anyone, organisations included, may run the Software free of charge to test
+      it, including on their own data on their own machines, in order to decide whether to
+      obtain a commercial license. An organisation may evaluate for up to 90 days from its
+      first use, unless the Licensor agrees in writing to a longer period. Evaluation does not
+      include using the Software, or files made with it, in production, or to keep, serve or
+      deliver data for business purposes.
+   b. Non-commercial use. Individuals may use the Software for personal purposes, and schools,
+      universities and non-profit research institutions for teaching and research, as long as
+      the use is not on behalf of or paid for by a business and is not for trading.
+   c. You may publish your own measurement results if you state the Software version, the data
+      and the settings you used.
+
+2. Business use needs a commercial license. Any use not covered by section 1 requires a
+   separate written license agreement with the Licensor. This includes running the Software in
+   the operations of a business; storing, processing, serving or delivering data for business
+   purposes; production use; and use in or with a product or service. To apply, tell the
+   Licensor who would use the Software, for what, where and on how much data. The Licensor
+   decides at its sole discretion whether to grant a license and on what terms; these terms do
+   not oblige the Licensor to grant one.
+
+3. Minimum terms of every commercial license. Unless the written agreement says otherwise,
+   every commercial license includes at least the following.
+   a. Scope. The license covers only the licensee, uses, sites, data volumes and period named
+      in the agreement. It is non-exclusive, non-transferable and cannot be sublicensed.
+   b. Source code. Source code is provided only where the Licensor agrees it is needed. It is
+      the Licensor's confidential information and trade secret. The licensee keeps it secure
+      and confidential, gives access only to named employees who need it for the licensed use
+      and are bound by written confidentiality obligations, keeps a record of who had access,
+      and makes no copies beyond those the licensed use and its backups require.
+   c. No passing on. The licensee does not distribute, sell, rent, lend, publish, sublicense or
+      otherwise make available to anyone, in any form and also not as a service, the Software,
+      its source code, or any part, modification or derivative of either.
+   d. No competing development. During the agreement and for five years after it ends, the
+      licensee does not use the Software, its source code, its file format or any knowledge
+      obtained from them to develop, have developed, improve, or help anyone develop software,
+      hardware or a service that compresses, encodes or stores market data or that competes
+      with the Software. Knowledge retained in the memory of people who had access is not
+      exempt.
+   e. Modifications. The licensee may modify the source code only for the licensed use.
+      Modifications are subject to all of these terms. The Licensor may use any improvement or
+      suggestion the licensee shares.
+   f. Verification. The licensee lets the Licensor verify compliance with b to e on reasonable
+      notice.
+   g. Breach. A breach of b, c or d entitles the Licensor to end the agreement at once, to
+      injunctive relief, and to a contractual penalty set in the agreement in addition to
+      damages. When the agreement ends, the licensee stops using the Software, destroys every
+      copy of the source code and confirms this in writing; it may still decompress files made
+      with the Software.
+   h. No transfer. The agreement cannot be assigned or transferred, also not through a merger,
+      acquisition or change of control, without the Licensor's written consent.
+   i. Liability. The Licensor's total liability is limited to the fees paid in the twelve
+      months before the claim. The Licensor is not liable for indirect damages, lost profits,
+      trading losses or lost data.
+   j. Responsibilities. Section 6 applies to the licensee in full; losses that its steps would
+      have prevented are the licensee's.
+
+4. Restrictions for everyone without a commercial license. You may not:
+   a. distribute, sell, rent, lend, publish or sublicense the Software, or offer it as a
+      service; share the official download link instead. Your employees and contractors may run
+      it for an evaluation on your behalf;
+   b. reverse engineer, decompile or disassemble the Software, or otherwise try to obtain its
+      source code, methods or file format, including by studying files made with it, except to
+      the extent the applicable law allows this regardless of this clause;
+   c. use the Software, files made with it, or any information obtained from them to develop,
+      have developed or improve software, hardware or a service that compresses, encodes or
+      stores market data, or to help anyone do so;
+   d. remove or change the Software's notices, or get around its compression period or any
+      other limit.
+
+5. Your data. The Software runs on your machines and sends nothing anywhere. Files compressed
+   with the Software and the data in them remain yours. You are responsible for having the
+   right to process the data you use it on, including under exchange and data vendor terms.
+
+6. Your responsibilities. Using the Software safely is your responsibility, not the
+   Licensor's. In particular you:
+   a. keep your original data until "freeidea verify", or your own byte-for-byte comparison,
+      has confirmed that the compressed file restores it exactly, and keep backups as your own
+      policies require;
+   b. test the Software on your own data and systems before you rely on it, and decide
+      yourself whether it suits your purpose;
+   c. keep a copy of every build you used; the Licensor does not undertake to keep old builds
+      available for download;
+   d. check data restored by the Software before you use it in production, in trading or for
+      decisions;
+   e. do not use the Software where a failure could harm people, property or markets, such as
+      the real-time path of trading or safety systems, without safeguards of your own.
+   Any loss that these steps would have prevented is yours to bear.
+
+7. Your files stay readable. Decompress and verify do not expire. Even after these terms end,
+   you may keep using the Software to decompress and verify files you made with it.
+
+8. Compression period. This build stops compressing after the date it prints when it runs.
+   Newer builds may be published with later dates and with changed terms.
+
+9. Ownership. The Software, its source code, file format, methods and documentation, and all
+   intellectual property in them, belong to the Licensor. No rights are granted except those
+   stated here; "FreeIdea" is the Licensor's name for the Software and no right to the name is
+   granted. The Licensor may use any feedback you send without obligation.
+
+10. No warranty. The Software is provided "as is", without warranty of any kind, express or
+    implied. Section 6 says what you must do before you rely on it.
+
+11. Limitation of liability. To the extent the law allows, the Licensor is not liable for any
+    damage arising from the Software or its use, including lost data, lost profits, trading
+    losses and indirect damages. Where liability cannot be excluded, it is limited to
+    100 euros.
+
+12. Termination. These terms end automatically if you breach them. You must then stop using
+    the Software, except as section 7 allows.
+
+13. Governing law. These terms are governed by the laws of Hungary. The courts of Budapest
+    have exclusive jurisdiction.
+
+14. Contact for a commercial license: Benjamin Weisz, benjaminweisz.dev@gmail.com.
