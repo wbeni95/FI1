@@ -18,13 +18,15 @@ messages, generated packet timing; [details](#nyse-xdp-and-cboe-pitch)).
 
 **Why it matters**
 
-- **Storage.** Per petabyte of captures, per copy and year, about **$30,000 less** on S3
-  Standard than with `zstd -19` ([What it saves](#what-it-saves)).
+- **Storage.** Per petabyte of IEX DEEP captures, per copy and year, about **$30,000 less** on
+  S3 Standard than with `zstd -19`; Nasdaq ITCH and ITTO files save more
+  ([What it saves](#what-it-saves)).
 - **A and B lines.** A B-line packet is stored as a reference to its A-line copy: a few bits
   instead of the whole packet again. On synthetic A+B captures built from real Nasdaq data:
   **38.5x**, against 7.8x with xz. A real A+B capture is not measured yet.
-- **Speed.** Compresses **15 to 60 times faster** than `zstd -19` on eight threads, and
-  decompresses captures at **1.2 GB/s** on eight threads, straight into replay tools.
+- **Speed.** On eight threads it compresses Nasdaq ITCH, ITTO and IEX DEEP data **15 to 61 times
+  faster** than `zstd -19`, and decompresses them at 280 MB/s to **1.2 GB/s**, depending on the
+  feed ([speeds](RESULTS.md#speed-clean-round-measured-2026-10-02)).
 
 **Try it on your own data:** ask for an evaluation build, [below](#try-it). Evaluation is free
 for 90 days per organisation, and non-commercial use is free; business use needs a license
@@ -87,10 +89,10 @@ day. Decompressing, zstd is faster per thread (8 to 18 times); fast settings suc
 compress 3.7 to 8.5 times faster than FreeIdea, with files 2.8 to 4.3 times larger. Full tables
 with gzip and `zstd -3`: [RESULTS.md](RESULTS.md).
 
-- **Compute.** Compressing a petabyte of captures takes about 370 machine-hours with FreeIdea
+- **Compute.** Compressing a petabyte of IEX DEEP captures takes about 370 machine-hours with FreeIdea
   against 22,400 with `zstd -19`: about $160 against $9,650 on an AWS c8a.2xlarge, 98% less.
 - **Download and decompress.** On links up to about 3.5 Gbit/s, fetching and decompressing a
-  FreeIdea capture finishes first, even against `zstd -3`: 124 s for 100 GB of raw capture at
+  FreeIdea IEX DEEP capture finishes first, even against `zstd -3`: 124 s for 100 GB of raw capture at
   1 Gbit/s, against 178 to 211 s with xz and zstd. On a fully used 10 Gbit/s link the faster
   decompressors win. Details in [SAVINGS.md](SAVINGS.md).
 
@@ -185,9 +187,9 @@ aws s3 cp s3://bucket/day.fi - | freeidea decompress - - | your_replay   # "-" w
 Options: `-j <threads>` (default: cores, at most 8; fewer when free memory is short),
 `--segment-mb <MB>`, `--feed itch|itto|pcap` (default: recognised from the input).
 
-[EVALUATION.md](EVALUATION.md) is a step-by-step guide for a two-week test on your own data,
-from unpacking and checking the download to the numbers we ask back; nothing needs to leave
-your machines.
+[EVALUATION.md](EVALUATION.md) is a step-by-step test plan on your own data, about two weeks of
+work, from unpacking and checking the download to the numbers we ask back; nothing needs to
+leave your machines. The build itself runs for 90 days.
 
 Public test data: IEX HIST for captures, <https://emi.nasdaq.com/ITCH/> and
 <https://emi.nasdaq.com/Options/> for Nasdaq files (unpack the `.gz` files first).

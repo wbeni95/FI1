@@ -1,6 +1,7 @@
 # FreeIdea evaluation guide
 
-For the engineers who run the two-week pilot. Everything runs on your machines; no data
+For the engineers who run the pilot: about two weeks of work, while the build runs for 90 days.
+Everything runs on your machines; no data
 and no file leaves your premises. We only ask for the numbers in the table at the end.
 
 ## What you need
